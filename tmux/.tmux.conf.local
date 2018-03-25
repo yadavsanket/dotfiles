@@ -1,0 +1,17 @@
+tmux new-session -s 'OP' -d
+tmux new-window -n 'manageservers'
+tmux split-window -v
+tmux split-window -h
+tmux resize-pane -U 20
+tmux new-window -n 'dfconsole'
+tmux split-window -v
+tmux attach-session -t 'OP'
+
+
+tmux new-session -s 'OP' -d
+tmux split-window -h
+tmux split-window -v
+tmux new-window -n 'oracledb'
+tmux new-window -n 'weblogic'
+tmux new-window -n 'redhat'
+tmux attach-session -t 'OP'
