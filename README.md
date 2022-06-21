@@ -35,3 +35,6 @@ Clone this repository in home folder. By default, it will be cloned in the folde
 cd
 stow <some folder inside dotfiles folder; this folder is usually the name of an app>
 ```
+
+- Going to use zellij instead of tmux
+
