@@ -25,7 +25,7 @@ Plug 'honza/vim-snippets'
 Plug 'nvie/vim-rst-tables'
 "Plug 'philpep/vim-rst-tables'
 
-Plug 'neovim/nvim-lspconfig'
+"Plug 'neovim/nvim-lspconfig'
 Plug 'elzr/vim-json'
 
 call plug#end()
