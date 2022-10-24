@@ -29,10 +29,12 @@ Also, note that many new apps follow XDG specification which mandates that all c
 
 ## Usage instructions
 
-Clone this repository in home folder. By default, it will be cloned in the folder named dotfiles. cd inside this folder and then run
+Clone this repository in home folder. By default, it will be cloned in the folder named dotfiles. 
 
 ```sh
-cd
+# cd inside this folder 
+cd ~/dotfiles # Name of this folder can also be .dotfiles so that it is a hidden folder. To achieve this, while under home folder, run the command git clone git@github.com:yadavsanket/dotfiles.git .dotfiles
+# and then run
 stow <some folder inside dotfiles folder; this folder is usually the name of an app>
 ```
 
