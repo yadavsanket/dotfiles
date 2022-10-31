@@ -1,0 +1,67 @@
+[user]
+	email = yadavsanket@gmail.com
+	name = Sanket Yadav
+[core]
+	editor = vi
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+    features = decorations
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+[diff]
+	tool = vimdiff3
+[difftool "vimdiff3"]
+	path = nvim
+[merge]
+	tool = vimdiff3
+[mergetool "vimdiff3"]
+	path = nvim
+[alias]
+    st = "status -s -b"
+    c = "commit"
+
+    # --all
+    # --verbose
+    br = "branch -a -v"
+
+    co = "checkout"
+    cb = "checkout -b"
+
+    # Short hash, relative date and message.
+    logd = "log --pretty='%C(yellow)%h %C(cyan)%ar %Creset%s'"
+
+    # --graph:
+    #     Draw a text-based graphical representation of the commit history on
+    #     the left hand side of the output.
+    # --decorate:
+    #     Print out the ref names of any commits that are shown. Defaults to
+    #     short optionm such that the name prefixes refs/heads/, refs/tags/ and
+    #     refs/remotes/ will not be printed.
+    ll = "log --graph --decorate --oneline"
+
+    p = "push"
+    last = "log -1 HEAD --stat"
+    rv = "remote -v"
+    d = "diff"
+    dv = "difftool -t vimdiff -y"
+    gl = "config --global -l"
+    se = "!git rev-list --all | xargs git grep -F"
